@@ -183,8 +183,6 @@ LC_DYLIB_CODE_SIGN_DRS = 0x2B
 class lc_str(c_uint):
     pass
 
-p_str16 = pypackable('p_str16', str, '16s')
-
 vm_prot_t = c_uint
 class segment_command(Structure):
     _fields_ = (

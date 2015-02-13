@@ -7,6 +7,8 @@ from loader import cpu_type_t,cpu_subtype_t
 from ctypes import *
 
 FAT_MAGIC = 0xcafebabeL
+FAT_CIGAM = 0xbebafecaL
+
 class fat_header(Structure):
     _fields_ = (
         ('magic', c_uint),
